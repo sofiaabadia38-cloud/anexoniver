@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-widht,intial-scale=1.0">
+  <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+  <title>Feliz Aniversário Sandy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CONTADOR -->
+<div id="contador" class="contador">3</div>
+
+<!-- CHUVA DE FELIZ ANIVERSÁRIO -->
+<div id="chuva-textos"></div>
+
+<!-- NOME -->
+<h1 id="nome-aniversariante" style="display:none;">Sandy 🎂</h1>
+
+<!-- CARTA -->
+<div class="carta" id="carta" onclick="abrirCarta()" style="display:none;">
+  Clique na carta 💌
+  <p class="mensagem" id="mensagem" style="display:none;">
+   Feliz aniversário ferrarista sofredora! 🎉<br>
+    muitos anos de vida, muita saúde, que Deus te ilumine e te abençoe sempre
+            felicidade e dificíl desejar por que torce para a ferrari né mas felicidade.
+            Te gosto muito! ❤️
+  </p>
+</div>
+
+<!-- LIVRO DE FOTOS -->
+<div id="livro-container" style="display:none;">
+  <div id="livro">
+    <div class="pagina ativa"><img src="sandy.jpg.jpeg" class="fotoLivro"></div>
+    <div class="pagina"><img src="sa.jpg.jpeg" class="fotoLivro"></div>
+    <div class="pagina"><img src="san.jpg.jpeg" class="fotoLivro"></div>
+  </div>
+  <button id="voltar">◀</button>
+  <button id="proximo">▶</button>
+  <button id="ver-video" style="display:none;">🎥 Ver Vídeo</button>
+</div>
+
+<!-- VÍDEO FINAL -->
+<video id="video-final" style="display:none;" autoplay muted width="100%" height="100%" object-fit="cover">
+  <source src="charles.mp4.mp4" type="video/mp4">
+</video>
+
+<!-- MÚSICA -->
+<audio id="musica" loop>
+  <source src="aniver.mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>

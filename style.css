@@ -1,0 +1,111 @@
+body {
+  background:black;
+  color:white;
+  text-align:center;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+
+/* CONTADOR */
+.contador {
+  font-size: 100px;
+  margin-top: 50px;
+  animation: brilho 2s infinite alternate;
+}
+
+@keyframes brilho{
+  from{ text-shadow:2px 2px 5px white; }
+  to{ text-shadow:5px 5px 20px white; }
+}
+
+/* NOME */
+#nome-aniversariante {
+  font-size: 60px;
+  margin-top: 50px;
+  color: #FF4500;
+  animation: aparecerTexto 2s forwards;
+}
+
+@keyframes aparecerTexto{
+  from { opacity:0; }
+  to { opacity:1; }
+}
+
+/* CARTA */
+.carta{
+  width:300px;
+  margin:50px auto;
+  padding:20px;
+  background:white;
+  color:black;
+  border-radius:10px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.5);
+  cursor:pointer;
+  animation: aparecerCarta 2s;
+}
+
+.mensagem{
+  font-size:18px;
+  animation: aparecerTexto 4s;
+}
+
+@keyframes aparecerCarta{
+  from{ transform: scale(0); }
+  to{ transform: scale(1); }
+}
+
+/* LIVRO DE FOTOS */
+#livro-container {
+  margin-top: 20px;
+}
+
+#livro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagina {
+  display: none;
+}
+
+.pagina.ativa {
+  display: block;
+}
+
+.fotoLivro {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* BOTÃO DE VÍDEO */
+#ver-video {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #FF4500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+/* CHUVA DE FELIZ ANIVERSÁRIO */
+.textoCai {
+  position: absolute;
+  top: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  pointer-events: none;
+  animation-name: cairTexto;
+  animation-timing-function: linear;
+}
+
+@keyframes cairTexto {
+  from { transform: translateY(-30px); opacity: 1; }
+  to { transform: translateY(100vh); opacity: 0; }
+}
